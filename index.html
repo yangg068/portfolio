@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SY AI Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <div class="header-container">
+      <a href="#" class="logo">SY AI Portfolio</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 메인 컨텐츠 -->
+  <main>
+    <div class="container">
+      <!-- About 섹션 -->
+      <section id="about">
+        <h2 class="section-title">About</h2>
+        <div class="about-card">
+          <div class="about-info">
+            <h3>양서연</h3>
+            <div class="info-item">
+              <strong>이름:</strong>양서연 (202506030, AI융합학부)
+            </div>
+            <div class="info-item">
+              <strong>관심 분야:</strong>금융 IT, 파이썬, C 언어
+            </div>
+            <div class="info-badges">
+              <span class="badge">관심사: 은행 IT</span>
+              <span class="badge">취미: 금융 관련 뉴스 읽기</span>
+              <span class="badge">기술 블로그 정리하기</span>
+              <span class="badge">카페에서 노트북으로 코딩하기</span>
+            </div>
+          </div>
+          <div class="about-description">한국성서대학교 AI융합학부 1학년 양서연입니다.
+금융 IT와 데이터 기반 서비스에 관심이 많고, 파이썬과 C 언어를 중심으로 프로그래밍 기초를 차근차근 쌓아가고 있습니다.
+새로운 개념을 이해할 때는 작은 실험을 반복하면서 배우는 스타일이며,
+"실제로 동작하는 코드"를 하나씩 완성해 가는 과정을 좋아합니다.
+앞으로는 금융 분야와 IT 기술을 연결해서, 사람들에게 더 편리하고 안전한 서비스를 만드는 것이 목표입니다.</div>
+        </div>
+      </section>
+
+      <!-- Projects 섹션 -->
+      <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid" id="projects-container">
+          <!-- 프로젝트 카드는 JavaScript로 동적 생성 -->
+        </div>
+      </section>
+
+      <!-- Contact 섹션 -->
+      <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">메시지</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">보내기</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
